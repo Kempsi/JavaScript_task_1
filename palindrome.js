@@ -1,7 +1,7 @@
 let input = require("readline-sync");
 
 // Kysytään käyttäjältä merkkijono
-let word = input.question("Syötä merkkijono: ").toLowerCase();
+let word = input.question("Anna merkkijono: ").toLowerCase();
 let isPalindrome = false;
 
 // Kutsutaan funktiota, joka tarkistaa että onko merkkijono palindromi
@@ -18,7 +18,7 @@ if (isPalindrome) {
 // Palauttaa true, jos on ja false, jos ei ole
 function CheckForPalindrome(word) {
   for (let i = 0; i < word.length / 2; i++) {
-    if (word[i] !== word[length - 1 - i]) {
+    if (word[i] !== word[word.length - 1 - i]) {
       return (isPalindrome = false);
     }
   }
